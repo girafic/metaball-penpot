@@ -1,6 +1,6 @@
 # Metaball (Penpot Plugin)
 
-<img src="https://github.com/girafic/color-picker-penpot/blob/main/public/assets/metaball_cover_penpot.jpg" width="100%" max-width="600px" />
+<img src="https://github.com/girafic/metaball-penpot/blob/main/public/assets/metaball_cover_penpot.jpg" width="100%" max-width="600px" />
 
 Easily convert ellipse objects into smooth 2D-Metaball shapes, creating organic, interconnected forms that blend naturally for a fluid visual effect.
 
