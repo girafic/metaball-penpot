@@ -1,0 +1,13 @@
+{
+  "name": "Metaball",
+  "description": " Easily convert ellipse objects into smooth 2D-Metaball shapes, creating organic, interconnected forms that blend naturally for a fluid visual effect.",
+  "code": "plugin.js",
+  "icon": "/assets/metaball_icon.png",
+  "permissions": [
+    "content:read",
+    "content:write",
+    "library:read",
+    "library:write",
+    "user:read"
+  ]
+}

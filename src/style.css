@@ -1,0 +1,120 @@
+@import "@penpot/plugin-styles/styles.css";
+
+.container {
+  padding: var(--spacing-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.slider {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 4px;
+  border-radius: 4px;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+[data-theme="dark"] .slider {
+  background: var(--db-quaternary);
+}
+
+[data-theme="light"] .slider {
+  background: var(--lb-quaternary);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .slider::-webkit-slider-thumb {
+  background: var(--db-primary);
+  border: 2px solid var(--da-primary);
+}
+
+[data-theme="light"] .slider::-webkit-slider-thumb {
+  background: var(--lb-primary);
+  border: 2px solid var(--la-primary);
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .slider::-moz-range-thumb {
+  background: var(--db-primary);
+  border: 2px solid var(--da-primary);
+}
+
+[data-theme="light"] .slider::-moz-range-thumb {
+  background: var(--lb-primary);
+  border: 2px solid var(--la-primary);
+}
+
+.slider::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .slider::-ms-thumb {
+  background: var(--db-primary);
+  border: 2px solid var(--da-primary);
+}
+
+[data-theme="light"] .slider::-ms-thumb {
+  background: var(--lb-primary);
+  border: 2px solid var(--la-primary);
+}
+
+[data-theme="dark"] .slider::-webkit-slider-thumb:hover,
+[data-theme="dark"] .slider::-moz-range-thumb:hover,
+[data-theme="dark"] .slider::-ms-thumb:hover {
+  border-color: var(--da-tertiary);
+}
+
+[data-theme="light"] .slider::-webkit-slider-thumb:hover,
+[data-theme="light"] .slider::-moz-range-thumb:hover,
+[data-theme="light"] .slider::-ms-thumb:hover {
+  border-color: var(--la-tertiary);
+}
+
+.button-container {
+  margin-top: var(--spacing-8);
+  display: flex;
+  gap: var(--spacing-8);
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.input-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--foreground-secondary);
+}

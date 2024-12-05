@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metaball</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="body-m">
+        Easily convert ellipse objects into smooth 2D-Metaball shapes, creating
+        organic, interconnected forms that blend naturally for a fluid visual
+        effect.
+      </div>
+      <div class="input-container">
+        <div class="input-group">
+          <div class="input-label">
+            <label for="rate" class="body-s">Rate:</label>
+            <span id="rateValue" class="body-s">50</span>
+          </div>
+          <input
+            id="rate"
+            class="slider"
+            value="50"
+            type="range"
+            min="1"
+            max="200"
+          />
+        </div>
+        <div class="input-group">
+          <div class="input-label">
+            <label for="handleSize" class="body-s">Handle Size:</label>
+            <span id="handleSizeValue" class="body-s">24</span>
+          </div>
+          <input
+            id="handleSize"
+            class="slider"
+            value="24"
+            type="range"
+            min="1"
+            max="24"
+          />
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="button" id="create" data-appearance="primary">
+          Create
+        </button>
+        <button type="button" id="union" data-appearance="button">Union</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
